@@ -25,6 +25,12 @@ public class Order_and_pick_up {
 			}
 		return index;
 	}
-	
+	public static boolean isRegularCustomer(String[] regularCustomers, String phone) {
+		boolean isRegularCustomer = false;
+		for (int i = 0; i < regularCustomers.length; i++) {
+			if (phone.equals(regularCustomers[i]))
+				isRegularCustomer = true;
+		}
+		return isRegularCustomer;
 
 }
